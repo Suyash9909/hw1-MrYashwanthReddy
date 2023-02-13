@@ -14,9 +14,9 @@ class TestAnswer():
 
     @classmethod
     def teardown_class(cls):
-
-
         print(f"Score:{(cls.__correct__/cls.__total__)*100}%")
+
+
     def test_number_x(self):
         TestAnswer.__total__ += 1
         x,y = answer.number()
@@ -136,3 +136,5 @@ class TestAnswer():
         Grace,last_name, job= answer.dictionary_nested()
         assert(job=="programmer")
         TestAnswer.__correct__ += 1
+
+
